@@ -3,7 +3,7 @@ import pandas as pd
 import requests
 from pathlib import Path
 
-BASE_DIR = Path(__file__).resolve().parent.parent.parent
+BASE_DIR = Path(__file__).resolve().parent.parent
 
 movies_dict = pickle.load(open(BASE_DIR / "model/movie_dict.pkl", "rb"))
 similarity = pickle.load(open(BASE_DIR / "model/similarity.pkl", "rb"))
