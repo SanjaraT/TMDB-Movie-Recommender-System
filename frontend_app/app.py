@@ -5,7 +5,13 @@ st.set_page_config(page_title="Movie Recommender", layout="wide")
 
 st.title(" Movie Recommender System")
 
-movies = get_movies()
+
+
+def movies():
+    if not hasattr(movies, "_cache"):
+        movies._cache = get_movies()
+    return movies._cache
+# movies = get_movies()
 
 # select box for movies
 selected_movie = st.selectbox(
