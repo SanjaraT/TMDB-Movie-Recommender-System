@@ -16,7 +16,7 @@ def movies():
 # select box for movies
 selected_movie = st.selectbox(
     "Select a Movie",
-    movies
+    movies()
 )
 
 # Recommend button
