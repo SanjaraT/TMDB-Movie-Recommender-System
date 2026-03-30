@@ -54,4 +54,5 @@ User → Streamlit Frontend → FastAPI Backend → ML Model → TMDB API
 👨‍💻 Author
 
 Sanjara
+
 Aspiring ML Engineer
